@@ -1,1 +1,1205 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cresignsys | Web Design,Development,Hosting ,SEO</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="keywords" name="Web Design,Development,Hosting ,SEO,Web Design,Web Hosting,Server Management,Domain Registration,Web Development">
+         
+        <meta name="description" content="Globally experienced web solution, all-encompassing Web Design & Development, Hosting, Domain Registration, Server Management, Digital Marketing, SEO"/>
+      
+
+        <script src="js/textrotate.js" type="text/javascript"></script>
+        
+        <!-- Favicons -->
+        <link href="" rel="icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon//apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon//apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon//apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon//apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon//apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon//apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon//apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon//android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon//favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+                <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="vendor/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+        </style> 
+        <link href="vendor/Font Awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <style>
+        
+        
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1002;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #fff;
+        z-index: 1001;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+
+    </style>
+    <script src="js/whatsapp-chat-support.js" type="text/javascript"></script>
+    <link href="css/whatsapp-chat-support.css" rel="stylesheet" type="text/css"/>
+    <script src="vendor/moment/moment-timezone-with-data.min.js" type="text/javascript"></script>
+    <script src="vendor/moment/moment.min.js" type="text/javascript"></script>
+    <script src="component/jquery/jquery-3.2.1.min.js"></script>
+	
+   
+	
+	
+    </head>
+
+    <body >
+
+     <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+     
+    
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+
+        <!-- Header Section Start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="logo pull-left">
+                    <!--<h1><a href="index.php">Cresignsys</a></h1>-->
+                    <a href="http://cresignsys.com"><img src="img/logo.png" alt="Cresignsys Logo" title="" /></a>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="index.php">Home</a></li>
+                        <li><a href="index.php#about">About</a></li>
+                        <li><a href="index.php#services">Services</a></li>
+                        <li><a href="index.php#portfolio">Portfolio</a></li>
+                        <li><a href="index.php#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Section End -->
+        <!-- Slider Section Start-->
+        <section class="slider">
+            <div class="slider-container">
+                <div id="carousel" class="carousel  slide carousel-fade" data-ride="carousel" data-interval="60000">
+
+                    <ol class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <div class="carousel-background"><img src="img/banners/cresignsys.webp" alt="Cresigsnys Services">
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+
+                                    <h2 style="font-size: 30px;">We Are One Of The Most Trusted Globally Experienced Web Solution, <br>All-Encompassing
+                                        <br><span style="font-size: 30px;"
+                                                  class="txt-rotate"
+                                                  data-period="1000"
+                                                  data-rotate='[ "WEBSITE DESIGN", "WEBSITE DEVELOPMENT", "E-COMMERCE DEVELOPMENT", "WEBSITE HOSTING", "DOMAIN NAME REGISTRATION","SERVER MANAGEMENT","DIGITAL MARKETING","SEO","BRANDING","LOGO DESIGN","SOCIAL MEDIA MANAGEMENT"]'></span>
+                                    </h2><a href="project.php" class="btn-get-started">Get Started</a>
+
+                                  
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/banners/webdesign.webp" alt="Web Design"></div>
+                            <div class="carousel-container">
+                               <div class="carousel-content">
+                                    <h2>WEB DESIGNING</h2>
+                                    <p style="font-size: 22px;">
+                                        We Are Passionate Designers Building Unique,Creative,Aesthetic Websites Which Are Responsive Fast Loading And Browser Compatible With Interactive User Interface   
+                                    </p>
+                                    <a href="project.php" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/banners/webdevelopment.webp" alt="Web Development"></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>WEB DEVELOPMENT</h2>
+                                    <p style="font-size: 22px;">
+                                        We are expert developers prominent in the industry for our E-Commerce development,Wordpress development,Payment Gateway Integration,PHP Application Development and thus provide interactive User Interface that are greatly versatile and compatible. </p>
+                                    <a href="project.php" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/banners/webhosting.webp" alt="Web Hosting"></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>WEB HOSTING</h2>
+                                    <p style="font-size: 22px;">
+                                        At Cresignsys we have proven expertise in secure Web Hosting .We provide Shared Web Hosting,Linux Hosting,Windows Hosting ,Cloud Hosting,Wordpress Hosting ,VPS Hosting,Cpanel Hosting,Email Hosting,Domain Registration,Server Management,server Migration and Domain Transfer.</p>
+                                    <a href="project.php" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="img/banners/slider-5.webp" alt="Branding"></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>BRANDING</h2>
+                                    <p style="font-size: 22px;">
+                                        We help you to optimise your online presence and customer experience through Tailored Tactics,Brilliant Logo Design,Social Media Management,SEO and Digital Marketing.
+                                    </p>
+                                    <a href="project.php" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev" style="color: #fff;">
+                        <span class="carousel-control-prev-icon ion-md-arrow-back" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next" style="color: #fff;">
+                        <span class="carousel-control-next-icon ion-md-arrow-forward" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+       
+        <section class="about" id="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3>About Us</h3>
+
+                </header>
+
+                <div class="row align-items-center about-row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 text-justify"  >
+
+                        <p>
+                            <b style="font-size:larger"> Cresignsys </b>established in 2009, is one of the best globally experienced, one-stop Digital Service provider 
+                            serving with the highest possible standards.</p>
+                        <p> The skill sets we learned over <b>12+ years</b>,allows us to capably mould our services to match your needs across Strategy, Design, 
+                            and Development for the web, mobile, software, Hosting & Digital Marketing.From full-project engagements to a 
+                            specific slice of services, we help our clients launch the best projects possible.</p>
+
+                        <p>We craft <b>browser compatible, polished,creative, intuitive designs</b> that top-notch developers bring to life with agile and clean code.
+                            We have expertise in <b> E-commerce Development</b>,<b>Wordpress Development</b>,<b>Payment Gateway Integration</b>,<b> PHP Application Development</b>,<b>Codeigniter Development</b>,<b>Laravel Development </b>resulting in 
+                            <b>Static</b> and <b>Dynamic</b> websites based on clients requirements.
+                            </p><p>
+                            Our Web Hosting services includes both <b>Linux and Windows Hosting</b>
+                            mainly<b> Wordpress Hosting</b>,<b>Cloud Hosting</b>, <b>VPS Hosting</b>, <b>Email Hosting</b>, <b>Dedicated Server</b>, <b>Server Management</b>, <b>Domain Registration</b>,<b> Server Migration</b>, <b>Domain Transfer</b> and Securing through<b> SSL certificate.</b>
+                        </p>  
+                        <p>  Cresignsys will help you in developing growth-centric digital strategy by reaching potential customers where and when they are looking for you.
+                            Our services include<b> Search Engine Optimization</b> ,<b>Social Media Marketing</b> ,<b> Logo Design and Online Brochures.</b> <!-- comment -->
+
+                            <span style="font-size: 18px;">Welcome,We are very happy to assist you in your digital journey.</span></p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12" >
+<video loop autoplay muted width="100%">
+                            <source src="img/Animation.webm" type="video/webm" >
+</video>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+    <!-- Services Section Start -->
+    <section id="services" class="services">
+        <div class="container">
+            <header class="section-header">
+                <h3>Services</h3>
+                <p style="font-size: large;">
+                    Over 12+ years of experience and hardwork lead us to achieve the necessary skillsets which paved the way to a satisfactory client base worldwide.
+                </p>
+            </header>
+            <div class="row">
+
+                <div class="services-box">
+
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+
+                        <img style="display: inline-block;height: 80px;" src="img/svg/website-design.svg" alt="">
+                        <h4><a href="">WEBSITE DESIGNING</a></h4>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/web-development.svg" alt="">
+                        <h4><a href="">WEBSITE DEVELOPMENT</a></h4>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/ecommerce.svg" alt="">
+                        <h4><a href="">E-COMMERCE DEVELOPMENT</a></h4>
+
+                    </div>
+                </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/wordpress-development.svg" alt="">
+                        <h4><a href="">WORDPRESS DEVELOPMENT</a></h4>
+
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="row">
+
+                <div class="services-box">
+
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+
+                        <img style="display: inline-block;height: 80px;" src="img/svg/laravel-development.svg" alt="">
+                        <h4><a href="">LARAVEL DEVELOPMENT</a></h4>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/codeigniter-development.svg" alt="">
+                        <h4><a href="">CODEIGNITER DEVELOPMENT</a></h4>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/payment-gateway-integration.svg" alt="">
+                        <h4><a href="">PAYMENT GATEWAY INTEGRATION</a></h4>
+
+                    </div>
+                </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/php-application-development.svg" alt="">
+                        <h4><a href="">PHP APPLICATION DEVELOPMENT</a></h4>
+
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="row">
+
+                <div class="services-box">
+
+                </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/website-hosting.svg" alt="">
+                        <h4><a href="">CLOUD HOSTING</a></h4>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/vps-hosting.svg" alt="">
+                        <h4><a href="">VPS HOSTING</a></h4>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/email-hosting.svg" alt="">
+                        <h4><a href="">E-MAIL HOSTING</a></h4>
+
+                    </div>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/wordpress-hosting.svg" alt="">
+
+                        <h4><a href="">WORDPRESS HOSTING</a></h4>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="services-box">
+
+                </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/dedicated-server-hosting.svg" alt="">
+                        <h4><a href="">DEDICATED SERVER HOSTING</a></h4>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/domain-registration.svg" alt="">
+                        <h4><a href="">DOMAIN NAME REGISTRATION</a></h4>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/server-management.svg" alt="">
+                        <h4><a href="">SERVER MANAGEMENT</a></h4>
+
+                    </div>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/seo.svg" alt="">
+
+                        <h4><a href="">SEO</a></h4>
+
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <div class="row">
+
+                <div class="services-box">
+
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/support.svg" alt="">
+                        <h4><a href="">BRANDING</a></h4>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/logo-design.svg" alt="">
+                        <h4><a href="">LOGO DESIGN</a></h4>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/facebook-marketing.svg" alt="">
+                        <h4><a href="">DIGITAL MARKETING</a></h4>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="single-service">
+                        <img style="display: inline-block;height: 80px;" src="img/svg/instagram-marketing.svg" alt="">
+                        <h4><a href="">SOCIAL MEDIA MANAGEMENT</a></h4>
+
+                    </div>
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- Call To Action Start -->
+    <section class="call-to-action">
+        <div class="container text-center">
+            <header class="section-header">
+                <h3>Get Started Now!</h3>
+                <p>
+                    It takes less than a minute of your time.<br>
+                    Or you may simply call +91- 996 - 128 1024.
+                </p>
+            </header>
+            <a class="cta-btn" href="project.php">GET A FREE PROPOSAL</a>
+        </div>
+    </section>
+    <!-- Call To Action End -->
+    <!-- Skills Section Start-->
+
+    <!-- Skills Section End-->
+    <!-- Portfolio Section Start -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+
+            <header class="section-header">
+                <h3 class="section-title">Our Portfolio</h3>
+                <p>
+                    Happy Clients World Wide.Our works at a glance...</p>
+            </header>
+            <!-- <div class="row">
+                                <div class="col-lg-12">
+                                    <ul id="portfolio-flters">
+                                        <li data-filter="*" class="filter-active">All</li>
+                                        <li data-filter=".web-des">WEBSITE DESIGNING</li>
+                                        <li data-filter=".web-dev">WEBSITE DEVELOPMENT</li>
+                                        <li data-filter=".app-hos">WEBSITE HOSTING</li>
+                                        <li data-filter=".app-bra">BRANDING</li>
+                                        <li data-filter=".app-dev">BRANDING</li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+
+            <div class="row portfolio-container">
+                
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Italianlights.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Italianlights.webp" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.italianlights.co/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>ItalianLights | WEBDEVELOPMENT  </h4>
+                            <p>E-commerce | Wordpress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-hos">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Fagorautomation.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Fagorautomation.webp" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.fagorautomation.com/in/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Fagor Automation | LINUX </h4>
+                            <p>Managed VPS Hosting </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Globaltechboom.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Globaltechboom.webp" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://globaltechboom.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+                        
+                        <div class="portfolio-info">
+                            <h4>GlobalTechBoom </h4>
+                            <p>LMS Website | Wordpress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item app-hos">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Exploreeducation.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Exploreeducation.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.exploreeducation.ae/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Exploreeducation | WEB HOSTING</h4>
+                            <p>LINUX SHARED HOSTING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item app-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Geocakes.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Geocakes.webp" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://geocakes.in/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Geo's Cakes | WEBSITE DESIGNING </h4>
+                            <p>HTML5 | Bootstrap </p>
+                        </div>
+                    </div>
+                </div>
+                
+ 
+                <div class="col-lg-4 col-md-6 portfolio-item app-hos">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/studywec.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/studywec.webp" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://studywec.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>studywec | WEBSITE HOSTING </h4>
+                            <p>LINUX SHARED HOSTING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-hos">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Eurasiaholidays.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Eurasiaholidays.webp" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.eurasiaholidays.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Eurasia Holidays | HOSTING</h4>
+                            <p>LINUX SHARED HOSTING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-bra">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/GEO_CAKES_logo.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/GEO_CAKES_logo.webp" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>GEO CAKES | LOGO DESIGN   </h4>
+                            <p>BRANDING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-bra">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/FrJamesElanjickal_Youtube.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/FrJamesElanjickal_Youtube.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.youtube.com/c/FrJamesElanjickal/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Fr.James Elanjickal | BRANDING</h4>
+                            <p>YOUTUBE CHANNEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Msss.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Msss.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.msss.org" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>MSSS | WEBSITE DEVELOPMENT</h4>
+                            <p> CMS DEVELOPMENT</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Msss_news.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Msss_news.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://msss-news.blogspot.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>MSSS | WEBSITE DEVELOPMENT</h4>
+                            <p>NEWS BLOG</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-bra">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Msss_Youtube.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Msss_Youtube.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.malankaralibrary.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>MSSS | BRANDING</h4>
+                            <p>YOUTUBE CHANNEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-hos">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Namequipments.webp " class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Namequipments.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.namequipments.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>NamEquipments  | HOSTING</h4>
+                            <p> LINUX SHARED HOSTING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Malankaralibrary.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Malankaralibrary.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://malankaralibrary.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Malankara Library  | HOSTING</h4>
+                            <p>LINUX SHARED HOSTING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Malankaralibrary_Youtube.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Malankaralibrary_Youtube.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.youtube.com/channel/UCxqADvSGYQObAkr4rn3bzxQ" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Malankara Library | BRANDING</h4>
+                            <p> YOUTUBE CHANNEL</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Chrysalis_logo.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Chrysalis_logo.webp" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.facebook.com/chrysalisbabyshop2020" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Chrysalis  | BRANDING  </h4>
+                            <p>LOGO DESIGN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Mbamim.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Mbamim.webp" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.fagorautomation.com/in/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Mbamim  | WEBSITE HOSTING </h4>
+                            <p>LINUX SHARED HOSTING </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Bevathealthcare.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Bevathealthcare.webp" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+                        
+                        <div class="portfolio-info">
+                            <h4>BevatHealthCare | WEBDESIGNING </h4>
+                            <p>HTML5 | Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item app-des">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Kossglobal.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Kossglobal.webp" class="link-preview" data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://kossglobal.org/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Koss Global  | WEBSITE HOSTING</h4>
+                            <p>LINUX SHARED HOSTING</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item app-dev">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio/Carmalcentralschool.webp" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio/Carmalcentralschool.webp" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://www.carmalcentralschool.com/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4>Carmal School | WEBDEVELOPMENT </h4>
+                            <p>CMS DEVELOPMENT </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+    <!-- Testimonials Section Start -->
+    <section class="testimonials">
+        <div class="container">
+            <header class="section-header">
+                <h3 class="section-title">Testimonials</h3>
+                <p>
+                    We follow modern approach and digital proficiency help customers across businesses create awesome websites.Hear what our clients are saying about us !!!
+                </p>
+            </header>
+
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="testimonial-img">
+                            <img src="img/testimonials/Kurian_Prakkanam.webp" alt="Testimonial image">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="testimonial-text">
+                            <h3>Kurian Prakkanam</h3>
+                            <h4>President at NFMA Canada National Federation of Malayalee Association.Toronto,Canada</h4>
+                            <p>                                   
+                                It was great to work with Cresignsys and they are always at our service whenever we need them. 
+                                They gave us a lot of their time understanding our requirements and nature of business.
+                                They were quick to comprehend our issues and came up with brilliant solutions that have helped
+                                us in achieving our targets for a long time. In relation to their service and results they have brought us,
+                                I am extremely happy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="testimonial-img">
+                            <img src="img/testimonials/Fr_Sebastian_John_Kizhakkethil.webp" alt="Testimonial image">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="testimonial-text">
+                            <h3>Fr.Sebastian John Kizhakkethil</h3>
+                            <h4>Director - Malankara Catholic Youth Movement ,Trivandrum,Kerala,India</h4>
+                            <p>
+                                One word regarding the team
+                                <br>
+                                With years of experience in developing websites and associates that best suited to distinct the needs,they assured me nothing but the best.Really it is amazing.
+
+                                Provided design-focused,custom-designed website for the library as per the demands of our readers to enhance user experience and satisfaction.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="testimonial-img">
+                            <img  src="img/testimonials/Jose_George.webp" alt="Testimonial image">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="testimonial-text">
+                            <h3>Jose George</h3>
+                            <h4>Meteorologist - Qatar Meteorological Department, Civil Aviation Public Authority, State of Qatar</h4>
+                            <p>
+                                KOSS Global highly appreciate their  long standing association with Cresignsys over a decade and gratefully appreciate the best quality services that contributed to the growth of our association immensely
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+    <!-- Clients Section Start -->
+    <section class="clients">
+        <div class="container">
+            <header class="section-header">
+                <h3 class="section-title">Our Clients</h3>
+                <p>
+                    TRUSTED BY HAPPY CUSTOMERS WORLDWIDE 
+                </p>
+            </header>
+
+            <div class="owl-carousel clients-carousel">
+                <img src="img/clients_logo/fagorautomation.webp" alt="fagorautomation">
+
+                <img src="img/clients_logo/exploreeducation.webp" alt="exploreeducation">
+                <img src="img/clients_logo/carmalcentralschool.webp" alt="carmalcentralschool">
+                <img src="img/clients_logo/eurasiaholidays.webp" alt="eurasiaholidays">
+                <a target="_blank" href="https://www.studywec.com/"><img src="img/clients_logo/studywec.webp" alt="studywec"></a>
+                <img src="img/clients_logo/kossglobal.webp" alt="kossglobal">
+                <img src="img/clients_logo/malankaralibrary.webp" alt="malankaralibrary">
+                <img src="img/clients_logo/mbamim.webp" alt="mbamim">
+                <img src="img/clients_logo/globaltechboom.webp" alt="globaltechboom">
+                <img src="img/clients_logo/namequipments.webp" alt="namequipments">
+            </div>
+
+        </div>
+    </section>
+    <!-- Clients Section End -->
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Contact Us</h3>
+                <p>
+                    Get in touch and we’ll get back to you as soon as we can. We look forward to hearing from you!
+                </p>
+            </div>
+
+            <div class="row contact-info">
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-md-pin"></i>
+                        <h3>Address</h3>
+                        <address>Nalanchira, Thiruvananthapuram</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-md-call"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+91-9961281024">+91-996-128-1024</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-md-mail"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info at cresignsys.com">info@cresignsys.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7891.0650446799755!2d76.94315472219849!3d8.544680712705636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b96a72be0c29%3A0x689bc167acdc8289!2sMar%20Ivanios%20Vidya%20Nagar!5e0!3m2!1sen!2sbd!4v1621503840412!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>CRESIGNSYS</h3>
+                        <p>
+                            Cresignsys Launched in 2009 for Web Design & Development, Hosting, Domain Registration, Server Management, Digital Marketing, SEO. 
+                            
+                            </p>
+                        <p>We Receive trust and love from customers and the people alike thanks to management that is transparent and honest.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="index.php">Home</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="index.php#about">About us</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="index.php#services">Our services</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="index.php#">Terms & condition</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="Privacy-policy.php">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Near Mar Ivanios Vidya Nagar ,<br>Nalanchira,<br>Thiruvananthapuram,<br>Kerala - 695015,<br>India<br>
+
+                            <strong>Phone:</strong> +91-996-128-1024<br>
+                            <strong>Email:</strong> info@cresignsys.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="https://twitter.com/cresignsys"><i class="ion-logo-twitter"></i></a>
+                            <a href="https://www.facebook.com/cresignsys"><i class="ion-logo-facebook"></i></a>
+                            <a href="https://in.linkedin.com/company/cresignsys"><i class="ion-logo-linkedin"></i></a>
+                            <a href="https://www.instagram.com/cresignsysweb/"><i class="ion-logo-instagram"></i></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Subscription</h4>
+                        <p>Please subscribe to get our newsletters.
+                        </p>
+                        <form action="project.php" method="post">
+                            <input type="email" name="email"><input type="submit"  value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <a href="https://cresignsys.com">Cresignsys</a>. All Rights Reserved
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+<div class="whatsapp_chat_support wcs_fixed_left" id="example_2">
+		<div class="wcs_button wcs_button_circle">
+			<span class="fa fa-whatsapp"></span>
+		</div>	
+		<div class="wcs_button_label">
+ 			Questions? Let's Chat
+ 		</div>	
+
+		<div class="wcs_popup">
+			<div class="wcs_popup_close">
+				<span class="fa fa-close"></span>
+			</div>
+			<div class="wcs_popup_header">
+				<span class="fa fa-whatsapp"></span>
+				<strong>Customer Support</strong>
+				
+				<div class="wcs_popup_header_description">Need Help? Chat with us on Whatsapp</div>
+			</div>	
+			<div class="wcs_popup_input" data-number="919961281024">
+				<input type="text" placeholder="Ask anything!" />
+				<i class="fa fa-play"></i>
+			</div>
+			<div class="wcs_popup_avatar">
+                            <img src="img/chat_person.webp" alt=""/>
+				
+			</div>
+		</div>
+	</div>	
+
+        
+          
+        
+          <!-- Vendor JS Files -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery-migrate.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/easing/easing.min.js"></script>
+        <script src="vendor/superfish/hoverIntent.js"></script>
+        <script src="vendor/superfish/superfish.min.js"></script>
+        <script src="vendor/waypoints/waypoints.min.js"></script>
+        <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+        <script src="vendor/counterup/counterup.min.js"></script>
+        <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+        <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendor/lightbox/js/lightbox.min.js"></script>
+        <script src="js/whatsapp-chat-support.js" type="text/javascript"></script>
+
+    
+        <!-- Main Javascript File -->
+        <script src="js/main.js"></script>
+
+   <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+
+ <script>
+		
+
+		$('#example_2').whatsappChatSupport({
+			defaultMsg: '',
+		});
+
+		
+	</script>
+</body>
+</html>
