@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 512 512"
+   style="enable-background:new 0 0 512 512;"
+   xml:space="preserve"
+   sodipodi:docname="php-application-development.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs31"><pattern
+     id="EMFhbasepattern"
+     patternUnits="userSpaceOnUse"
+     width="6"
+     height="6"
+     x="0"
+     y="0" /></defs><sodipodi:namedview
+   id="namedview29"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.5"
+   inkscape:cx="177"
+   inkscape:cy="139"
+   inkscape:window-width="1366"
+   inkscape:window-height="705"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1"
+   showguides="true"
+   inkscape:guide-bbox="true"><sodipodi:guide
+     position="64.052996,720.86847"
+     orientation="1,0"
+     id="guide1985" /><sodipodi:guide
+     position="456.72571,498.07544"
+     orientation="1,0"
+     id="guide2067" /><sodipodi:guide
+     position="526.34853,83.123417"
+     orientation="0,-1"
+     id="guide2071" /><sodipodi:guide
+     position="-780,286"
+     orientation="0,-1"
+     id="guide21" /><sodipodi:guide
+     position="159.77206,394.4078"
+     orientation="1,0"
+     id="guide23" /><sodipodi:guide
+     position="401.92378,150.06708"
+     orientation="1,0"
+     id="guide25" /></sodipodi:namedview>
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#FF5000;}
+</style>
+
+<path
+   d="m 71.967512,167.74435 h 66.066778 c 19.39117,0.1628 33.4427,5.75363 42.15455,16.76322 8.71183,11.00957 11.58632,26.04715 8.62811,45.11275 -1.14888,8.71185 -3.69775,17.25625 -7.64206,25.63785 -3.78149,8.38161 -9.03744,15.93993 -15.77712,22.67964 -8.21883,8.54439 -17.00974,13.96779 -26.37742,16.27017 -9.36767,2.30239 -19.0656,3.45126 -29.08909,3.45126 H 80.349119 L 70.981431,344.4976 H 36.715466 L 71.967512,167.74435 v 0 m 28.842578,28.10304 -14.791069,73.95534 c 0.986081,0.16278 1.97215,0.24651 2.958219,0.24651 1.148866,0 2.302385,0 3.451252,0 15.777138,0.16279 28.926308,-1.39537 39.442848,-4.68384 10.51654,-3.45124 17.58649,-15.4469 21.20053,-35.9916 2.95821,-17.25624 0,-27.20067 -8.87463,-29.82866 -8.71185,-2.62797 -19.63772,-3.86056 -32.78688,-3.69775 -1.97215,0.16279 -3.86056,0.24652 -5.66992,0.24652 -1.64188,0 -3.36753,0 -5.17685,0 l 0.2465,-0.24652"
+   id="path2"
+   style="fill:#00b9f3;fill-opacity:0.843137;stroke-width:4.65128" /><path
+   d="m 227.85048,120.65945 h 34.01947 l -9.6142,47.0849 h 30.56821 c 16.76322,0.33023 29.2519,3.78148 37.47069,10.35374 8.38162,6.57226 10.8468,19.0656 7.39554,37.47072 l -16.51669,82.09043 h -34.51249 l 15.77714,-78.39267 c 1.6419,-8.21882 1.14887,-14.05152 -1.47912,-17.50276 -2.62796,-3.45126 -8.29787,-5.17687 -17.00971,-5.17687 l -27.36348,-0.24653 -20.21446,101.31883 h -34.01946 l 35.49856,-176.99979 v 0"
+   id="path4"
+   style="fill:#00b9f3;fill-opacity:0.843137;stroke-width:4.65128" /><path
+   d="m 364.22134,167.74435 h 66.06677 c 19.3912,0.1628 33.4427,5.75363 42.15454,16.76322 8.71186,11.00957 11.58634,26.04715 8.62813,45.11275 -1.14886,8.71185 -3.69777,17.25625 -7.64204,25.63785 -3.78149,8.38161 -9.03744,15.93993 -15.77715,22.67964 -8.2188,8.54439 -17.00971,13.96779 -26.3774,16.27017 -9.36768,2.30239 -19.06559,3.45126 -29.08911,3.45126 h -29.58213 l -9.36768,46.83836 H 328.9693 l 35.25204,-176.75325 v 0 m 28.84259,28.10304 -14.79106,73.95534 c 0.98605,0.16278 1.97214,0.24651 2.9582,0.24651 1.14887,0 2.30239,0 3.45126,0 15.77714,0.16279 28.9263,-1.39537 39.44284,-4.68384 10.51656,-3.45124 17.5865,-15.4469 21.20053,-35.9916 2.95822,-17.25624 0,-27.20067 -8.87465,-29.82866 -8.71185,-2.62797 -19.63768,-3.86056 -32.78686,-3.69775 -1.97214,0.16279 -3.86056,0.24652 -5.6699,0.24652 -1.64191,0 -3.36753,0 -5.17689,0 l 0.24653,-0.24652"
+   id="path6"
+   style="fill:#00b9f3;fill-opacity:0.843137;stroke-width:4.65128" /></svg>
