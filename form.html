@@ -1,68 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Import Data Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Package Price Calculator</title>
 </head>
 <body>
-    <h1>Import Data</h1>
+    <h1>Hosting Package Price Calculator</h1>
+    <form id="priceCalculator">
+        <label for="costPrice">Cost Price ($):</label>
+        <input type="number" id="costPrice" step="0.01" required><br><br>
+        
+        <label for="profitPercentage">Profit Percentage (%):</label>
+        <input type="number" id="profitPercentage" step="0.01" required><br><br>
+        
+        <button type="button" onclick="calculatePrice()">Calculate</button><br><br>
 
-    <!-- Input field for file uploads -->
-    <input type="file" id="fileInput">
-    <button id="importButton">Import Data</button>
-
-    <!-- Display imported data -->
-    <h2>Imported Data:</h2>
-    <ul id="importedList"></ul>
+        <label for="sellingPrice">Selling Price ($):</label>
+        <input type="text" id="sellingPrice" disabled><br><br>
+    </form>
 
     <script>
-        // Function to handle file import
-        document.getElementById("importButton").addEventListener("click", function () {
-            var fileInput = document.getElementById("fileInput");
-            var importedList = document.getElementById("importedList");
+        function calculatePrice() {
+            const costPrice = parseFloat(document.getElementById("costPrice").value);
+            const profitPercentage = parseFloat(document.getElementById("profitPercentage").value);
 
-            // Check if a file has been selected
-            if (fileInput.files.length === 0) {
-                alert("Please select a file.");
-                return;
+            if (!isNaN(costPrice) && !isNaN(profitPercentage)) {
+                const profit = (costPrice * profitPercentage) / 100;
+                const sellingPrice = costPrice + profit;
+                
+                document.getElementById("sellingPrice").value = sellingPrice.toFixed(2);
+            } else {
+                alert("Please enter valid numbers for Cost Price and Profit Percentage.");
             }
-
-            var file = fileInput.files[0];
-
-            // Check if the selected file is a CSV file
-            if (file.type !== "text/csv") {
-                alert("Please select a CSV file.");
-                return;
-            }
-
-            // Read the CSV file
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                var csvContent = e.target.result;
-
-                // Split the CSV content into rows
-                var rows = csvContent.split("\n");
-
-                // Clear the existing list
-                importedList.innerHTML = "";
-
-                // Iterate through the CSV rows and create list items
-                rows.forEach(function (row) {
-                    var columns = row.split(",");
-                    if (columns.length === 2) { // Ensure there are two columns (name and email)
-                        var name = columns[0].trim();
-                        var email = columns[1].trim();
-
-                        // Create a new list item and display the imported data
-                        var listItem = document.createElement("li");
-                        listItem.textContent = "Name: " + name + ", Email: " + email;
-                        importedList.appendChild(listItem);
-                    }
-                });
-            };
-
-            reader.readAsText(file);
-        });
+        }
     </script>
 </body>
 </html>
