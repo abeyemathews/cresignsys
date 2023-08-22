@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hosting Package Price Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
 </head>
 <body>
     <h1>Hosting Package Price Calculator</h1>
     <form id="priceCalculator">
-        <label for="costPrice">Cost Price ($):</label>
-        <input type="number" id="costPrice" step="0.01" required><br><br>
-        
-        <label for="profitPercentage">Profit Percentage (%):</label>
-        <input type="number" id="profitPercentage" step="0.01" required><br><br>
-        
+        <label for="packageName">Select Package Name:</label>
+        <select id="packageName">
+            <optgroup label="Shared Linux Hosting">
+                <option value="Pro-Unlimited Domains">Pro-Unlimited Domains</option>
+                <option value="Business-3 Domains">Business-3 Domains</option>
+                <option value="Unlimited Linux Hosting Plan Single Domain">Unlimited Linux Hosting Plan Single Domain</option>
+                <option value="1 GB Linux Hosting Plan-Single Domain">1 GB Linux Hosting Plan-Single Domain</option>
+                <option value="5 GB Linux Hosting Single Domain">5 GB Linux Hosting Single Domain</option>
+                <option value="10 GB Linux Hosting Single Domain">10 GB Linux Hosting Single Domain</option>
+            </optgroup>
+            <optgroup label="Shared Windows Hosting">
+                <option value="Pro-10 Domains">Pro-10 Domains</option>
+                <option value="Business-5 Domains">Business-5 Domains</option>
+                <option value="Unlimited Windows Hosting Plan-Single Domain">Unlimited Windows Hosting Plan-Single Domain</option>
+                <option value="Windows 1 GB Single Domain">Windows 1 GB Single Domain</option>
+            </optgroup>
+            <optgroup label="Linux KVM VPS">
+                <option value="Standard-Standard CPU">Standard-Standard CPU</option>
+                <option value="Enhanced-Enhanced CPU">Enhanced-Enhanced CPU</option>
+                <option value="Premium-Premium CPU">Premium-Premium CPU</option>
+                <option value="Elite-Elite CPU">Elite-Elite CPU</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="costPrice">Cost Price:</label>
+        <input type="number" id="costPrice" step="0.01">
+        <label for="currency">Currency:</label>
+        <select id="currency">
+            <option value="INR">INR (Indian Rupees)</option>
+            <option value="USD">USD (United States Dollars)</option>
+        </select><br><br>
+
+        <label for="sellingPrice">Selling Price:</label>
+        <input type="number" id="sellingPrice" step="0.01">
+        <label for="profitPercentage">Profit Percentage:</label>
+        <input type="number" id="profitPercentage" step="0.01"><br><br>
+
+        <label for="frequency">Frequency:</label>
+        <select id="frequency">
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+        </select><br><br>
+
+        <label for="includeTax">Include 18.0% Tax:</label>
+        <input type="checkbox" id="includeTax"><br><br>
+
         <button type="button" onclick="calculatePrice()">Calculate</button><br><br>
 
-        <label for="sellingPrice">Selling Price ($):</label>
-        <input type="text" id="sellingPrice" disabled><br><br>
+        <label for="result">Result:</label>
+        <div id="result"></div><br><br>
+
+        <!-- Export and Import Buttons -->
+        <button type="button" onclick="exportHistory()">Export History</button>
+        <input type="file" id="importFile" accept=".json" style="display:none;">
+        <button type="button" onclick="document.getElementById('importFile').click()">Import History</button>
     </form>
 
-    <script>
-        function calculatePrice() {
-            const costPrice = parseFloat(document.getElementById("costPrice").value);
-            const profitPercentage = parseFloat(document.getElementById("profitPercentage").value);
+    <h2>Calculation History:</h2>
+    <ul id="calculationHistory"></ul>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 
-            if (!isNaN(costPrice) && !isNaN(profitPercentage)) {
-                const profit = (costPrice * profitPercentage) / 100;
-                const sellingPrice = costPrice + profit;
-                
-                document.getElementById("sellingPrice").value = sellingPrice.toFixed(2);
-            } else {
-                alert("Please enter valid numbers for Cost Price and Profit Percentage.");
-            }
-        }
-    </script>
+   
 </body>
 </html>

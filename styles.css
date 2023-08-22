@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#priceCalculator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, select, input, button, #result, #calculationHistory {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input[type="number"], input[type="checkbox"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23000" d="M5.293 8.293a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L6 6.586 3.707 4.293a1 1 0 00-1.414 1.414l3 3z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+select:focus {
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#result {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#calculationHistory {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+button.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    #priceCalculator {
+        margin: 10px;
+        padding: 10px;
+        max-width: none;
+    }
+
+    select, input[type="number"], input[type="checkbox"], button, #calculationHistory {
+        font-size: 14px;
+    }
+}
